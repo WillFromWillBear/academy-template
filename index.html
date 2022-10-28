@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <meta
+            name="viewport"
+            content="width=device-width,
+        minimum-scale=1,initial-scale=1"
+        />
+
+        <style type="text/css">
+            body {
+                overflow: hidden;
+                margin: 0;
+                font-family: "Inter", sans-serif;
+            }
+
+            #background-div {
+                background: linear-gradient(-45deg, #000000, #000000, #001358, #000000, #000000, #000000);
+                background-size: 400% 400%;
+                -webkit-animation: gradientBG 60s ease infinite;
+                animation: gradientBG 60s ease infinite;
+                position: absolute;
+                z-index: -2;
+                width: 1920px;
+                height: 1080px;
+            }
+
+            @-webkit-keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            @keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            #bg {
+                position: absolute;
+                z-index: 99;
+                opacity: 0.2;
+                left: 40%;
+                top: 25%;
+            }
+
+            #menu-bar {
+                z-index: 99;
+
+                margin: 0;
+                position: fixed;
+                padding-right: 5px;
+                width: 90px;
+                height: 100%;
+                border-right: 4px solid #0047ff;
+                box-shadow: 15px 0px 20px -20px white;
+            }
+
+            .menu-item {
+                width: 75px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                filter: drop-shadow(0px -1px 2px white);
+            }
+
+            .locked {
+                filter: brightness(30%);
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="background-div">
+            <img id="bg" src="remove.png" />
+            <div style="border: 0px solid blue; cursor: pointer;">
+                <nav id="menu-bar">
+                    <div id="manu-inner">
+                        <div>
+                            <a class="" href=""><img class="menu-item" style="padding-top: 10px;" src="https://i.imgur.com/j9Ahw9q.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/IOh52pE.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/KIr5m5o.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href=""><img class="menu-item" src="https://i.imgur.com/F1oHSwJ.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/i00tgW6.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/llhVBiG.png" /></a>
+                        </div>
+                        <div>
+                            <a class="" href=""><img class="menu-item" src="https://i.imgur.com/XPGwDRs.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/8p7WmTI.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/Ii19JBW.png" /></a>
+                        </div>
+                        <div>
+                            <a class="locked" href="../"><img class="menu-item" src="https://i.imgur.com/hymE2Pn.png" /></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <section>
+                <!-- 	PUT THE CODE FOR THE ACADEMY SKILLTREE HERE	-->
+            </section>
+        </div>
+    </body>
+</html>
